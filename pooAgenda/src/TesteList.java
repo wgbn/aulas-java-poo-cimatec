@@ -3,7 +3,7 @@ import java.util.*;
 public class TesteList {
 
 	public static void main(String args[]) {
-		List l = new ArrayList();
+		List<IF_Contato> l = new ArrayList<IF_Contato>();
 		
 		IF_Contato[] c = new IF_Contato[3];
 		
@@ -23,7 +23,7 @@ public class TesteList {
 		l.add(c[1]);
 		//l.add(c[2]);
 		
-		Iterator it = l.iterator();
+		Iterator<IF_Contato> it = l.iterator();
 		
 		while(it.hasNext()){
 			IF_Contato o = (IF_Contato) it.next();
